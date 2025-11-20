@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Prestations - Symfony Business Manager{% endblock %}
+
+{% block body %}
+  <section class="hero">
+    <h1>Catalogue de prestations</h1>
+    <p>Offres fictives utilisées pour démontrer la modélisation Doctrine et l'affichage Twig d'un back-office métier.</p>
+  </section>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Prestation</th>
+        <th>Catégorie</th>
+        <th>Prix mensuel</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for offer in offers %}
+        <tr>
+          <td>{{ offer.title }}</td>
+          <td>{{ offer.category }}</td>
+          <td>{{ offer.monthlyPrice|number_format(0, ',', ' ') }} EUR</td>
+        </tr>
+      {% else %}
+        <tr>
+          <td colspan="3">Aucune prestation fictive chargée.</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JEE Management App Preview</title>
+    <style>
+      :root {
+        --background: #f4f6f8;
+        --foreground: #17212b;
+        --muted: #65717d;
+        --line: #d9e2e6;
+        --primary: #245b70;
+        --panel: #ffffff;
+        --success: #227a54;
+        --warning: #a66a18;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--foreground);
+        background: var(--background);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      main {
+        width: min(1080px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 32px 0;
+      }
+
+      .hero {
+        padding: 30px;
+        color: #ffffff;
+        background: var(--primary);
+        border-radius: 8px;
+      }
+
+      .hero h1,
+      .hero p {
+        margin: 0;
+      }
+
+      .hero p {
+        margin-top: 10px;
+        color: #eaf3f6;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+        margin: 18px 0;
+      }
+
+      .card,
+      table {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+      }
+
+      .card {
+        min-height: 110px;
+        padding: 18px;
+      }
+
+      .card span {
+        color: var(--muted);
+      }
+
+      .card strong {
+        display: block;
+        margin-top: 8px;
+        color: var(--primary);
+        font-size: 30px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        overflow: hidden;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid var(--line);
+      }
+
+      th {
+        color: var(--muted);
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 4px 9px;
+        color: #ffffff;
+        background: var(--success);
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .badge.inactive {
+        background: var(--warning);
+      }
+
+      @media (max-width: 760px) {
+        .grid {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        table {
+          display: block;
+          overflow-x: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <h1>JEE Management App</h1>
+        <p>Application Java/JEE vitrine avec Servlet, JSP, modèle métier et repository en mémoire.</p>
+      </section>
+
+      <section class="grid" aria-label="Indicateurs">
+        <article class="card"><span>Clients</span><strong>5</strong></article>
+        <article class="card"><span>Actifs</span><strong>4</strong></article>
+        <article class="card"><span>Inactifs</span><strong>1</strong></article>
+        <article class="card"><span>Projets</span><strong>15</strong></article>
+      </section>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Client</th>
+            <th>Ville</th>
+            <th>Secteur</th>
+            <th>Statut</th>
+            <th>Projets actifs</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>North Digital</td><td>Lille</td><td>Software</td><td><span class="badge">active</span></td><td>4</td></tr>
+          <tr><td>Atlas Services</td><td>Paris</td><td>Consulting</td><td><span class="badge">active</span></td><td>3</td></tr>
+          <tr><td>Nova Retail</td><td>Lyon</td><td>Retail</td><td><span class="badge inactive">inactive</span></td><td>1</td></tr>
+          <tr><td>Data Harbor</td><td>Nantes</td><td>Data</td><td><span class="badge">active</span></td><td>5</td></tr>
+          <tr><td>Cloud Works</td><td>Grenoble</td><td>Cloud</td><td><span class="badge">active</span></td><td>2</td></tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>

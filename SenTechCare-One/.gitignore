@@ -1,0 +1,13 @@
+target/
+.tools/
+.vscode/
+
+sentechcare-one-web/node_modules/
+sentechcare-one-web/dist/
+sentechcare-one-web/.env
+sentechcare-one-web/.env.local
+
+.env
+.env.local
+*.log
+.DS_Store

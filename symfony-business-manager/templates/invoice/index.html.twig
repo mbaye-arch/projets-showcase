@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Factures - Symfony Business Manager{% endblock %}
+
+{% block body %}
+  <section class="hero">
+    <h1>Suivi des factures</h1>
+    <p>Vue de gestion pour contrôler les montants, les statuts de paiement et les échéances commerciales.</p>
+  </section>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Référence</th>
+        <th>Date</th>
+        <th>Montant</th>
+        <th>Statut</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for invoice in invoices %}
+        <tr>
+          <td>{{ invoice.reference }}</td>
+          <td>{{ invoice.issuedAt|date('d/m/Y') }}</td>
+          <td>{{ invoice.amount|number_format(0, ',', ' ') }} EUR</td>
+          <td><span class="badge {{ invoice.status }}">{{ invoice.status }}</span></td>
+        </tr>
+      {% else %}
+        <tr>
+          <td colspan="4">Aucune facture fictive chargée.</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

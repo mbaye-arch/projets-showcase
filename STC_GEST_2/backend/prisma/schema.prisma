@@ -1,0 +1,133 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+enum TypeMouvement {
+  ENTREE
+  SORTIE
+  RETOUR
+  AJUSTEMENT
+}
+
+enum StatutStock {
+  NORMAL
+  FAIBLE
+  RUPTURE
+}
+
+enum StrategieQrCode {
+  INVENTORY_NUMBER
+  INTERNAL_URL
+}
+
+enum ModeCompteurInventaire {
+  ANNUEL
+  GLOBAL
+}
+
+model Materiel {
+  id             Int              @id @default(autoincrement())
+  reference      String?          @unique
+  nom            String
+  marque         String?
+  modele         String?
+  categorie      String?
+  description    String?          @db.Text
+  stock          Stock?
+  mouvements     MouvementStock[]
+  inventaireItems InventaireItem[]
+  createdAt      DateTime         @default(now())
+  updatedAt      DateTime         @updatedAt
+}
+
+model Stock {
+  id                 Int           @id @default(autoincrement())
+  materielId         Int           @unique
+  materiel           Materiel      @relation(fields: [materielId], references: [id], onDelete: Cascade)
+  numeroInventaire   String        @unique
+  codeBarresValeur   String?       @unique
+  qrCodeValeur       String?       @db.VarChar(512)
+  quantiteActuelle   Int           @default(0)
+  stockMinimum       Int           @default(0)
+  emplacement        String?
+  prixAchat          Decimal       @default(0) @db.Decimal(12, 2)
+  dateAchat          DateTime?
+  dateReception      DateTime?
+  datePremiereEntree DateTime?
+  dateDerniereEntree DateTime?
+  dateDerniereSortie DateTime?
+  dateDerniereReprise DateTime?
+  dateFinGarantie    DateTime?
+  createdAt          DateTime      @default(now())
+  updatedAt          DateTime      @updatedAt
+}
+
+model MouvementStock {
+  id               Int           @id @default(autoincrement())
+  materielId       Int
+  materiel         Materiel      @relation(fields: [materielId], references: [id], onDelete: Cascade)
+  numeroInventaire String
+  typeMouvement    TypeMouvement
+  quantite         Int
+  prixUnitaire     Decimal?      @db.Decimal(12, 2)
+  dateMouvement    DateTime
+  dateAchat        DateTime?
+  dateReception    DateTime?
+  motif            String?
+  referenceDocument String?
+  commentaire      String?       @db.Text
+  createdAt        DateTime      @default(now())
+  updatedAt        DateTime      @updatedAt
+
+  @@index([materielId, dateMouvement])
+  @@index([numeroInventaire])
+}
+
+model Inventaire {
+  id            Int             @id @default(autoincrement())
+  dateInventaire DateTime
+  commentaire   String?         @db.Text
+  items         InventaireItem[]
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+}
+
+model InventaireItem {
+  id               Int        @id @default(autoincrement())
+  inventaireId     Int
+  inventaire       Inventaire @relation(fields: [inventaireId], references: [id], onDelete: Cascade)
+  materielId       Int
+  materiel         Materiel   @relation(fields: [materielId], references: [id], onDelete: Cascade)
+  quantiteTheorique Int
+  quantiteReelle   Int
+  ecart            Int
+  commentaire      String?    @db.Text
+  createdAt        DateTime   @default(now())
+  updatedAt        DateTime   @updatedAt
+
+  @@unique([inventaireId, materielId])
+}
+
+model Parametre {
+  id        Int      @id @default(autoincrement())
+  cle       String   @unique
+  valeur    String   @db.Text
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model CompteurInventaire {
+  id        Int      @id @default(autoincrement())
+  prefix    String
+  anneeRef  Int
+  compteur  Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([prefix, anneeRef], name: "prefix_annee")
+}

@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Clients - Symfony Business Manager{% endblock %}
+
+{% block body %}
+  <section class="hero">
+    <h1>Clients fictifs</h1>
+    <p>Liste de démonstration alimentée par Doctrine. Les données sont générées pour le projet vitrine.</p>
+  </section>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Ville</th>
+        <th>Secteur</th>
+        <th>Statut</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for client in clients %}
+        <tr>
+          <td>{{ client.name }}</td>
+          <td>{{ client.city }}</td>
+          <td>{{ client.sector }}</td>
+          <td><span class="badge">{{ client.status }}</span></td>
+        </tr>
+      {% else %}
+        <tr>
+          <td colspan="4">Aucun client fictif chargé.</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
+

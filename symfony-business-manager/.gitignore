@@ -1,0 +1,20 @@
+/.env.local
+/.env.*.local
+/.env
+/var/
+/vendor/
+/public/bundles/
+/.phpunit.cache/
+/.idea/
+/.vscode/
+*.log
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###

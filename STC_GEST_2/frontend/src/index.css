@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #0b1f2a;
+  background: #f3f7f8;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Manrope', sans-serif;
+  background-color: #f3f7f8;
+  background-image: radial-gradient(circle at 10% 15%, rgba(15, 118, 110, 0.12), transparent 36%),
+    radial-gradient(circle at 85% 0%, rgba(245, 158, 11, 0.14), transparent 32%);
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl bg-white/95 p-5 shadow-card ring-1 ring-slate-200/70;
+  }
+
+  .btn-primary {
+    @apply rounded-xl bg-accent px-4 py-2 text-sm font-semibold text-white transition hover:bg-teal-700 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .btn-secondary {
+    @apply rounded-xl border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-50;
+  }
+
+  .btn-danger {
+    @apply rounded-xl bg-danger px-4 py-2 text-sm font-semibold text-white transition hover:bg-red-700;
+  }
+
+  .input {
+    @apply w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-700 outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/20;
+  }
+
+  .label {
+    @apply mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-500;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.35s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

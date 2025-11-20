@@ -1,0 +1,17 @@
+{
+  "name": "stc-gets-ops",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "setup:linux-mac": "bash ./scripts/linux-mac/setup.sh",
+    "setup:linux-mac:db": "bash ./scripts/linux-mac/setup.sh --with-db",
+    "start:linux-mac": "bash ./scripts/linux-mac/start-dev.sh",
+    "deploy:linux-mac": "bash ./scripts/linux-mac/deploy-prod.sh",
+    "configure:linux-mac": "bash ./scripts/linux-mac/configure-env.sh",
+    "setup:windows": "powershell -ExecutionPolicy Bypass -File .\\scripts\\windows\\setup.ps1",
+    "setup:windows:db": "powershell -ExecutionPolicy Bypass -File .\\scripts\\windows\\setup.ps1 -WithDatabase",
+    "start:windows": "powershell -ExecutionPolicy Bypass -File .\\scripts\\windows\\start-dev.ps1",
+    "deploy:windows": "powershell -ExecutionPolicy Bypass -File .\\scripts\\windows\\deploy-prod.ps1",
+    "configure:windows": "powershell -ExecutionPolicy Bypass -File .\\scripts\\windows\\configure-env.ps1"
+  }
+}

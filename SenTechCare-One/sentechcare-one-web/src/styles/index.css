@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  background: #f6f8fb;
+}
+
+body {
+  @apply m-0 min-h-screen bg-slate-100 text-slate-800 antialiased;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  @apply text-inherit no-underline;
+}
+
+::selection {
+  @apply bg-brand-100 text-brand-900;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}

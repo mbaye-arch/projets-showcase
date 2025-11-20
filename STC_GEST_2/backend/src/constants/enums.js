@@ -1,0 +1,17 @@
+export const TYPE_MOUVEMENT = Object.freeze({
+  ENTREE: 'ENTREE',
+  SORTIE: 'SORTIE',
+  RETOUR: 'RETOUR',
+  AJUSTEMENT: 'AJUSTEMENT'
+});
+
+export const STATUT_STOCK = Object.freeze({
+  NORMAL: 'NORMAL',
+  FAIBLE: 'FAIBLE',
+  RUPTURE: 'RUPTURE'
+});
+
+export const STRATEGIE_QR_CODE = Object.freeze({
+  INVENTORY_NUMBER: 'INVENTORY_NUMBER',
+  INTERNAL_URL: 'INTERNAL_URL'
+});

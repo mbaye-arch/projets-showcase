@@ -1,0 +1,73 @@
+<svg width="1080" height="1920" viewBox="0 0 1080 1920" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Splash screen pour app mobile -->
+  <defs>
+    <linearGradient id="gradientSplash" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF1B6B;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF6B35;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="gradientWhite" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F0F0F0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fond dégradé -->
+  <rect width="1080" height="1920" fill="url(#gradientSplash)"/>
+  
+  <!-- Motif décoratif (cercles en arrière-plan) -->
+  <circle cx="200" cy="300" r="150" fill="white" opacity="0.05"/>
+  <circle cx="880" cy="500" r="200" fill="white" opacity="0.05"/>
+  <circle cx="150" cy="1500" r="180" fill="white" opacity="0.05"/>
+  <circle cx="900" cy="1700" r="220" fill="white" opacity="0.05"/>
+  
+  <!-- Logo principal centré -->
+  <g transform="translate(540, 800)">
+    <!-- Sac shopping -->
+    <path d="M -120 -50 L -140 120 Q -140 150 -100 150 L 100 150 Q 140 150 140 120 L 120 -50 Z" 
+          fill="url(#gradientWhite)" 
+          stroke="white" 
+          stroke-width="8"
+          stroke-linejoin="round"/>
+    
+    <!-- Poignée -->
+    <path d="M -85 -50 Q -85 -120 0 -120 Q 85 -120 85 -50" 
+          fill="none" 
+          stroke="white" 
+          stroke-width="8" 
+          stroke-linecap="round"/>
+    
+    <!-- Lettre N -->
+    <g transform="translate(0, 35)">
+      <path d="M -50 -35 L -50 70 M -50 -35 L 50 70 M 50 -35 L 50 70" 
+            stroke="#8B5CF6" 
+            stroke-width="14" 
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            fill="none"/>
+    </g>
+  </g>
+  
+  <!-- Texte NIVAH -->
+  <text x="540" y="1100" 
+        font-family="Arial, sans-serif" 
+        font-size="120" 
+        font-weight="bold" 
+        fill="white" 
+        text-anchor="middle">NIVAH</text>
+  
+  <!-- Slogan -->
+  <text x="540" y="1180" 
+        font-family="Arial, sans-serif" 
+        font-size="36" 
+        fill="white" 
+        opacity="0.9"
+        text-anchor="middle">Votre E-commerce Multi-boutiques</text>
+  
+  <!-- Petites étoiles décoratives -->
+  <circle cx="300" cy="950" r="12" fill="white" opacity="0.7"/>
+  <circle cx="780" cy="980" r="10" fill="white" opacity="0.7"/>
+  <circle cx="350" cy="1050" r="8" fill="white" opacity="0.6"/>
+  <circle cx="730" cy="1070" r="14" fill="white" opacity="0.6"/>
+</svg>

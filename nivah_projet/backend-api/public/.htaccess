@@ -1,0 +1,22 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Rediriger toutes les requêtes vers index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php [QSA,L]
+
+    # Headers de sécurité
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Désactiver l'affichage des erreurs en production
+php_flag display_errors Off
+php_value error_reporting 0
+
+# Augmenter les limites d'upload
+php_value upload_max_filesize 5M
+php_value post_max_size 6M
+php_value max_execution_time 300

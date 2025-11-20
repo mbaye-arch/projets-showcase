@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dashboard - Symfony Business Manager{% endblock %}
+
+{% block body %}
+  <section class="hero">
+    <h1>Dashboard métier Symfony</h1>
+    <p>Projet vitrine avec données fictives pour présenter une architecture Symfony, Doctrine et Twig orientée application de gestion.</p>
+  </section>
+
+  <section class="grid" aria-label="Indicateurs">
+    {% for stat in stats %}
+      <article class="card">
+        <span>{{ stat.label }}</span>
+        <strong>{{ stat.value }}</strong>
+        <small>{{ stat.hint }}</small>
+      </article>
+    {% endfor %}
+  </section>
+
+  <section class="panel">
+    <h2>Dernières factures</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Référence</th>
+          <th>Date</th>
+          <th>Montant</th>
+          <th>Statut</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for invoice in invoices|slice(0, 4) %}
+          <tr>
+            <td>{{ invoice.reference }}</td>
+            <td>{{ invoice.issuedAt|date('d/m/Y') }}</td>
+            <td>{{ invoice.amount|number_format(0, ',', ' ') }} EUR</td>
+            <td><span class="badge {{ invoice.status }}">{{ invoice.status }}</span></td>
+          </tr>
+        {% else %}
+          <tr>
+            <td colspan="4">Aucune facture fictive chargée.</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+{% endblock %}
