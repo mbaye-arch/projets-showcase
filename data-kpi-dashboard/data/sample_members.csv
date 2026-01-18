@@ -1,0 +1,42 @@
+member_id,region,city,join_date,status,channel,events_attended,last_activity_date
+M0001,Ile-de-France,Paris,2025-01-08,active,website,8,2026-04-24
+M0002,Hauts-de-France,Lille,2025-01-12,active,referral,5,2026-04-20
+M0003,Auvergne-Rhone-Alpes,Lyon,2025-01-19,inactive,social,1,2025-11-03
+M0004,Occitanie,Toulouse,2025-02-03,active,field,6,2026-04-18
+M0005,Provence-Alpes-Cote d'Azur,Marseille,2025-02-11,active,website,7,2026-04-21
+M0006,Nouvelle-Aquitaine,Bordeaux,2025-02-18,inactive,referral,2,2025-12-15
+M0007,Pays de la Loire,Nantes,2025-03-04,active,social,4,2026-03-30
+M0008,Bretagne,Rennes,2025-03-10,active,field,9,2026-04-25
+M0009,Grand Est,Strasbourg,2025-03-22,inactive,website,0,2025-10-09
+M0010,Normandie,Rouen,2025-04-02,active,referral,3,2026-04-12
+M0011,Ile-de-France,Paris,2025-04-15,active,social,6,2026-04-26
+M0012,Hauts-de-France,Lille,2025-04-27,active,field,5,2026-04-23
+M0013,Auvergne-Rhone-Alpes,Grenoble,2025-05-06,inactive,website,1,2026-01-15
+M0014,Occitanie,Montpellier,2025-05-19,active,referral,4,2026-04-14
+M0015,Provence-Alpes-Cote d'Azur,Nice,2025-05-25,active,social,5,2026-04-08
+M0016,Nouvelle-Aquitaine,Poitiers,2025-06-07,inactive,field,2,2026-02-01
+M0017,Pays de la Loire,Angers,2025-06-14,active,website,7,2026-04-29
+M0018,Bretagne,Brest,2025-06-28,active,referral,4,2026-03-25
+M0019,Grand Est,Nancy,2025-07-03,active,social,6,2026-04-19
+M0020,Normandie,Caen,2025-07-17,inactive,field,1,2025-12-02
+M0021,Ile-de-France,Creteil,2025-07-29,active,website,8,2026-04-22
+M0022,Hauts-de-France,Amiens,2025-08-05,active,referral,3,2026-04-11
+M0023,Auvergne-Rhone-Alpes,Saint-Etienne,2025-08-21,inactive,social,0,2025-09-30
+M0024,Occitanie,Nimes,2025-09-02,active,field,5,2026-04-13
+M0025,Provence-Alpes-Cote d'Azur,Toulon,2025-09-15,active,website,4,2026-03-28
+M0026,Nouvelle-Aquitaine,Limoges,2025-09-27,active,referral,6,2026-04-16
+M0027,Pays de la Loire,Le Mans,2025-10-04,inactive,social,1,2026-01-03
+M0028,Bretagne,Vannes,2025-10-18,active,field,7,2026-04-17
+M0029,Grand Est,Metz,2025-11-01,active,website,3,2026-04-01
+M0030,Normandie,Le Havre,2025-11-09,inactive,referral,2,2026-02-07
+M0031,Ile-de-France,Versailles,2025-11-20,active,social,5,2026-04-27
+M0032,Hauts-de-France,Roubaix,2025-12-02,active,field,4,2026-04-15
+M0033,Auvergne-Rhone-Alpes,Annecy,2025-12-16,active,website,6,2026-04-10
+M0034,Occitanie,Albi,2026-01-07,active,referral,2,2026-04-06
+M0035,Provence-Alpes-Cote d'Azur,Avignon,2026-01-22,inactive,social,0,2026-01-29
+M0036,Nouvelle-Aquitaine,La Rochelle,2026-02-03,active,field,3,2026-04-07
+M0037,Pays de la Loire,Saint-Nazaire,2026-02-14,active,website,4,2026-04-09
+M0038,Bretagne,Saint-Malo,2026-02-26,active,referral,2,2026-03-21
+M0039,Grand Est,Reims,2026-03-08,active,social,3,2026-04-05
+M0040,Normandie,Evreux,2026-03-19,active,field,1,2026-04-02
+
