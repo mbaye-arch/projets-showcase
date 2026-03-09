@@ -1,0 +1,20 @@
+[project]
+name = "myserver"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Adrien Luxey-Bitri", email = "aluxey@univ-lille.fr"},
+    {name = "Boris Baldassari", email = "boris@deuxfleurs.fr"},
+]
+dependencies = [
+    "pytest>=8.0.2",
+    "requests>=2.31.0",
+    "pdoc>=14.4.0",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
