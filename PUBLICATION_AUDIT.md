@@ -93,6 +93,29 @@ Statut: prêts pour publication:
 - Symfony Business Manager;
 - JEE Management App.
 
+### Projet Java majeur
+
+Statut: prêt pour publication.
+
+`l2s4-projet-2025` est à mettre en avant comme l'un des meilleurs projets Java du showcase. Il compile avec `javac -encoding UTF-8` et montre une vraie architecture orientée objet:
+- moteur abstrait `Jeu`;
+- plateau configurable, tuiles, positions et ressources;
+- actions polymorphes;
+- deux variantes complètes, `Ares` et `Demeter`;
+- joueurs spécialisés, bâtiments, ports, objectifs et conditions de victoire.
+- 112 fichiers Java source/test et documentation par livrables.
+
+### Projets académiques Java, Python et web
+
+Statut: prêts après nettoyage:
+- Java POO Labs: sources et tests conservés, artefacts `.class`, `.jar`, Javadoc générée et dossiers IDE retirés;
+- Image Decoupe: script Python converti en CLI, `requirements.txt`, `.gitignore` et README ajoutés;
+- JO Soccer: README normalisé et projet conservé comme TP frontend DOM;
+- EasyShop: `.idea` et upload local retirés, schéma SQL ajouté, accès MySQL configuré via variables d'environnement.
+
+Projet non retenu tel quel:
+- `jeu_d_hotello`: version Java incomplète, remplacée par le TP Othello plus abouti dans `TP/TP5_MBAYE`.
+
 ## Règle avant push
 
 - Ne jamais pousser `.env`, secrets, dumps SQL réels, logs, `node_modules`, `vendor`, `target`, `dist`, `.next`, `.tools`.

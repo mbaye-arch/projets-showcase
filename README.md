@@ -30,6 +30,21 @@ Collection de projets publics préparés pour un portfolio d'alternance en cycle
 | [Refonte TP3 Serveur Web](refonte_tp3_serveur_web-main/) | Python, sockets, HTTP | Mini serveur web pédagogique et refactoring réseau |
 | [Crossword C](crosswords_abdoulaye_mbaye_ngalamou-yinipi_jospen-main/) | C, Makefile | Générateur de mots croisés et placement sous contraintes |
 
+## Projet Java majeur
+
+| Projet | Stack | Objectif |
+| --- | --- | --- |
+| [Ares & Demeter Strategy Game](l2s4-projet-2025/) | Java, POO, JUnit | Moteur de jeu de stratégie réutilisable avec plateau, ressources, actions polymorphes, tests et deux variantes complètes |
+
+## Projets académiques complémentaires
+
+| Projet | Stack | Objectif |
+| --- | --- | --- |
+| [Java POO Labs](TP/) | Java, JUnit, POO | Série de TP Java : Othello, hôtel, location, news, marché, calculateurs |
+| [Image Decoupe](image_decoupe/) | Python, Pillow | Traitement d'image par découpage récursif et couleur moyenne |
+| [JO Soccer](jo_soccer/) | HTML, CSS, JavaScript | Page interactive autour du tournoi olympique de football féminin |
+| [EasyShop](easyshop/) | PHP, MySQL, HTML, CSS, JS | Prototype académique multi-profils client, commerçant et livreur |
+
 ## Qualité publication
 
 - Données fictives uniquement.
@@ -37,3 +52,4 @@ Collection de projets publics préparés pour un portfolio d'alternance en cycle
 - Fichiers `.env`, dépendances installées, builds et caches exclus via `.gitignore`.
 - Secrets, emails personnels, numéros et credentials remplacés par des placeholders quand nécessaire.
 - Les projets privés ou sensibles ne sont pas inclus.
+- Les projets académiques gardent uniquement les sources, tests, assets et consignes utiles.
