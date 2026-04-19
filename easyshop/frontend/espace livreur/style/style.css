@@ -1,0 +1,126 @@
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Couleur de fond */
+    color: #333; /* Couleur du texte principal */
+}
+
+/* Styles pour l'en-tête */
+header {
+    background-color: #FF9999; /* Fond blanc pour l'en-tête */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; /* Couleur du texte de l'en-tête */
+}
+
+header p {
+    font-size: 16px;
+    color: #666; /* Couleur du texte de description */
+}
+
+/* Styles pour la navigation */
+nav {
+    background-color: #333; /* Fond noir pour la barre de navigation */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff; /* Couleur du texte de la barre de navigation */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Styles pour le contenu principal */
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.content {
+    flex: 1;
+    background-color: #fff; /* Fond blanc pour le contenu principal */
+    padding: 20px;
+}
+
+/* Styles pour le pied de page */
+footer {
+    background-color: #FF9999; /* Fond noir pour le pied de page */
+    color: #fff; /* Couleur du texte du pied de page */
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container .description,
+.footer-container .contact-info,
+.footer-container .social-links {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-container h4 {
+    margin-bottom: 10px;
+}
+
+.footer-container p {
+    margin-bottom: 5px;
+}
+
+.footer-container .social-links ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.footer-container .social-links ul li {
+    margin-right: 10px;
+}
+
+.footer-container .social-links ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-container .social-links ul li img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+}
+.image-container {
+    float: left; /* Pour placer l'image à droite */
+    margin-left: 20px; /* Ajoute un peu d'espace entre le texte et l'image */
+    border-radius: 10px; /* Arrondit les coins de l'image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+}
+
+.image-container img {
+    width: 100px; /* Ajuste la largeur de l'image selon vos besoins */
+    height: auto; /* Permet à la hauteur de s'ajuster automatiquement en fonction de la largeur */
+    float: left; /* Pour placer l'image à droite */
+}
+

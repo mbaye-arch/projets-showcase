@@ -1,0 +1,72 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header{
+    background-color: #333;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.logo-container img {
+    width: 100px; /* Ajustez la taille selon vos besoins */
+}
+
+.map-intro {
+    flex-grow: 1;
+    padding-left: 20px;
+}
+
+#map {
+    height: 85%; /* Ajustement pour la hauteur de l'en-tête */
+}
+footer {
+    background-color: #333; /* Fond noir pour le pied de page */
+    color: #fff; /* Couleur du texte du pied de page */
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container .description,
+.footer-container .contact-info,
+.footer-container .social-links {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-container h4 {
+    margin-bottom: 10px;
+}
+
+.footer-container p {
+    margin-bottom: 5px;
+}
+
+.footer-container .social-links ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.footer-container .social-links ul li {
+    margin-right: 10px;
+}
+
+.footer-container .social-links ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-container .social-links ul li img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}

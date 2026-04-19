@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace client - Easy Shop</title>
+    <link rel="stylesheet" href="style/style.css"> 
+    <script src="script/script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+
+
+<!-- Assurez-vous de lier votre fichier CSS -->
+</head>
+<body>
+   <header>
+            <div class="image-container">
+                <img src="../image/logo.webp" alt="logo" width=10% height=10%>
+            </div>
+        <h1>EasyShop - Espace Client</h1>
+        <!-- Ajout de la partie pour l'image de l'entreprise -->
+        <p>Chez EasyShop, le client est roi. Nous garantissons une expérience d'achat exceptionnelle, avec des produits de qualité et un service fluide. Votre commande arrivera à l'heure, prête à répondre à vos besoins. Votre satisfaction est notre priorité absolue.</p>
+    </header>
+    <nav>
+    <ul>
+        <li><a href="#" id="mon-compte-link">Mon Compte</a></li>
+        <li><a href="#" id="mes-commandes-link">Mes Commandes</a></li>
+        <li><a href="#" id="mes-boutiques-link">Mes Boutiques</a></li>
+        <li><a href="#" id="mon-panier-link">Mon Panier</a></li>
+        <li><a href="carte.html">Boutique a Proximite</a></li> <!-- Lien vers la nouvelle page des cartes -->
+        <li><a href="#">Se Déconnecter</a></li>
+    </ul>
+</nav>
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Rechercher un type d'entreprise...">
+        <button id="search-button">Rechercher</button>
+    </div>
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+        </div>
+        <div class="content">
+            <!-- Contenu principal ici -->
+            <h2>Bienvenue sur EasyShop</h2>
+            <p>Voici votre tableau de bord. Vous pouvez accéder à vos informations personnelles, consulter vos commandes récentes, parcourir les boutiques et gérer votre panier.</p>
+        </div>
+        <!-- Ajoutez un conteneur pour la liste des boutiques -->
+      <div id="boutiques-list">
+      <!-- Votre liste des boutiques ici -->
+      </div>
+    </main>
+      <div id="client-info" style="display: none;"></div>
+
+    <!-- Conteneur pour les commandes de l'utilisateur -->
+    <div id="orders-info" style="display: none;"></div>
+   <footer>
+    <div class="footer-container">
+        <div class="description">
+            <h4>Description du site</h4>
+            <p>Easy Shop connecte les commerçants locaux à leur clientèle proche, simplifiant ainsi l'achat de produits et services locaux grâce à une livraison efficace, tout en favorisant l'économie locale.</p>
+        </div>
+        <div class="contact-info">
+            <h4>Contact</h4>
+            <p>Adresse : 123 Rue du Commerce, Ville</p>
+            <p>Téléphone : +1234567890</p>
+            <p>Email : contact@example.com</p>
+        </div>
+        <div class="social-links">
+            <h4>Suivez-nous</h4>
+            <ul>
+                <li><a href="#"><img src="../image/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="../image/insta.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="../image/whatsapp.png" alt="WhatsApp"></a></li>
+            </ul>
+        </div>
+    </div>
+    <p>&copy; 2024 Easy Shop. Tous droits réservés.</p>
+</footer>
+</body>
+</html>
+

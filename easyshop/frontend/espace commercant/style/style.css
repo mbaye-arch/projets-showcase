@@ -1,0 +1,115 @@
+/* Style général pour toutes les pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 5px;
+}
+
+header {
+    background-color: #007bff; /* Couleur principale */
+    color: white;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Style spécifique pour la page des commerçants */
+.commercants-header {
+    background-color: #0066cc; /* Couleur légèrement différente */
+}
+
+.commercants-header h1 {
+    color: white;
+}
+
+.commercants-main {
+    background-color: #e6f2ff; /* Couleur légèrement différente */
+}
+
+.commercants-footer {
+    background-color: #cce0ff; /* Couleur légèrement différente */
+}
+h1, p{
+  text-align:center;  
+  }
+.image-container {
+    float: left; /* Pour placer l'image à droite */
+    margin-left: 20px; /* Ajoute un peu d'espace entre le texte et l'image */
+    border-radius: 10px; /* Arrondit les coins de l'image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+}
+
+.image-container img {
+    width: 100px; /* Ajuste la largeur de l'image selon vos besoins */
+    height: auto; /* Permet à la hauteur de s'ajuster automatiquement en fonction de la largeur */
+}
+footer {
+    background-color: #007bff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+li img{
+  width : 20px;
+  }
+}
+
+.footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.description,
+.contact-info,
+.social-links {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.social-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links ul li {
+    margin-bottom: 5px;
+}
+
+.social-links ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.social-links ul li a:hover {
+    color: #666;
+}
+.logout-btn {
+    background-color: #ff0000; /* Rouge */
+    color: #fff; /* Texte en blanc */
+    padding: 10px 20px; /* Espace de remplissage */
+    border: none; /* Supprime les bordures */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur pointeur au survol */
+    position: absolute; /* Position absolue */
+    top: 20px; /* Positionnement par rapport en haut du header */
+    right: 20px; /* Positionnement par rapport à droite du header */
+}
+
+

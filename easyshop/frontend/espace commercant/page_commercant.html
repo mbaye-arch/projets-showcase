@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Commerçant - Easy Shop</title>
+    <link rel="stylesheet" href="style/style.css"> <!-- Assurez-vous de lier votre fichier CSS -->
+</head>
+<body>
+   <header>
+        <a href="../index.html">
+            <div class="image-container">
+                <img src="../image/logo.webp" alt="logo" width=10% height=10%>
+            </div>
+        </a>
+        <h1>EasyShop - Espace Commerçant</h1>
+        <!-- Ajout de la partie pour l'image de l'entreprise -->
+        <p>Avec Easy Shop, les commerçants locaux découvrent le pouvoir de voir leurs rêves s'épanouir, de tisser des liens plus forts avec leur communauté, et de créer des souvenirs durables à chaque vente, car chaque achat est bien plus qu'une transaction – c'est une histoire de connexion humaine.</p>
+    </header>
+<div class="company-image">
+            <h3>Nom Entreprise</h3>
+            <img src="image/entreprise.jpg" alt="Image de l'entreprise">
+        </div>
+        <!-- Bouton de déconnexion -->
+        <button class="logout-btn">Se Déconnecter</button>
+<main class="commercants-main">
+    <section id="products">
+        <h2>Mes Produits</h2>
+        <div class="products-container">
+            <!-- Liste des produits -->
+            <div class="product">
+                <p>Nom du Produit</p>
+                <p>Description du produit</p>
+                <p>Quantité: XX</p>
+                <p>Prix: $XX.XX</p>
+                <img src="image/produit.jpg" alt="Produit">
+                <button class="edit-btn">Modifier</button>
+                <button class="delete-btn">Supprimer</button>
+            </div>
+            <!-- Répétez cette structure pour chaque produit -->
+        </div>
+        
+        <!-- Formulaire pour ajouter un nouveau produit -->
+        <form id="add-product-form">
+            <h3>Ajouter un Nouveau Produit</h3>
+            <label for="product-name">Nom du Produit:</label>
+            <input type="text" id="product-name" name="product-name" required>
+            <label for="product-description">Description:</label>
+            <textarea id="product-description" name="product-description" rows="4" required></textarea>
+            <label for="product-quantity">Quantité:</label>
+            <input type="number" id="product-quantity" name="product-quantity" min="1" required>
+            <label for="product-price">Prix:</label>
+            <input type="number" id="product-price" name="product-price" step="0.01" required>
+            <label for="product-image">Image:</label>
+            <input type="file" id="product-image" name="product-image" accept="image/*" required>
+            <button type="submit">Ajouter</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="description">
+            <h4>Description du site</h4>
+            <p>Gérez toutes vos commandes et la liste de vos produits dans votre espace commerçant sur EasyShop. Simplifiez votre gestion quotidienne et concentrez-vous sur la croissance de votre entreprise grâce à notre plateforme conviviale.</p>
+        </div>
+        <div class="contact-info">
+            <h4>Contact</h4>
+            <p>Adresse : 123 Rue du Commerce, Ville</p>
+            <p>Téléphone : +1234567890</p>
+            <p>Email : contact@example.com</p>
+        </div>
+        <div class="social-links">
+            <h4>Suivez-nous</h4>
+            <ul>
+                <li><a href="#"><img src="../image/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="../image/insta.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="../image/whatsapp.png" alt="WhatsApp"></a></li>
+            </ul>
+        </div>
+    </div>
+    <p>&copy; 2024 Easy Shop. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
+

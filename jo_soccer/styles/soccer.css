@@ -1,0 +1,204 @@
+body{
+    background: linear-gradient(90deg,  #38445499 0%,#d4d3dc 35%, rgba(255,255,255,1) 100%);
+}
+
+div#notes{
+    width : 20%;
+    position : absolute;
+    top: 350px;
+    font-size: 14px;
+    background-color: #d4d3dc;
+}
+
+/********************
+* header
+*********************/
+
+
+header{
+    width: 100%;
+    height: 120px;
+    position :relative;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: rgb(236,240,241);
+}
+
+header span{
+    position:absolute;
+    top: 20px;
+    left: 100px;
+    font-weight: bold;
+}
+
+.phases{
+    display:inline-block;
+    border:#666 3px solid;
+    margin:2px;
+    font-size:24px;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    opacity:0.2;
+}
+
+
+
+div#illustration{
+    position: absolute;
+    top:50px;
+    left:250px;
+    width :90px;
+    height:65px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/boules_tirage.png);
+    border-radius:50%;
+    background-position: center;
+}
+
+
+/******************************
+* boutons olymiques
+*******************************/
+
+header>button:first-of-type{
+    opacity:1;
+}
+
+
+/********************
+* Infos Pays
+*********************/
+
+
+div#infoPays{
+    float:right;
+    width:25%;
+    height:300px;
+    border: 1px solid black;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgb(0, 80, 120) 0%, #317ac155 35%, rgba(0, 55, 255, 0.5) 100%);
+    position : relative;
+    margin-top:10px;
+    padding : 10px;
+    border : 3px solid gold;
+}
+
+
+div#infoPays img{
+    position: absolute;
+    right: 10px;
+    top:10px;
+    width:20%;
+}
+
+div#infoPays li{
+    font-size: 18px;
+}
+
+
+div#infoPays h1{
+    font-size: 35px;
+}
+
+div#infoPays table{
+    position: relative;
+    top: 20%;
+    display: inline-block;
+    width:200px;
+    margin-right:30px;
+    margin-left: 30%;
+    text-align:center;
+}
+
+table,td,th{
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+td,th{
+    border: 1px solid black;
+    width:200px;
+}
+
+
+/********************
+* Poules
+*********************/
+
+div#poules{
+    width:80%;
+    position:relative;
+    text-align:center;
+}
+
+div#poules table{
+    display: inline-block;
+    top: 10px;
+    margin-top: 40px;
+    margin-right: 5px;
+    width: 300px;
+    text-align:center;
+}
+
+
+td[class*="q"]::after{
+    content:"🗹";
+}
+
+td[class$="1"]::before{
+    content:"1-  ";
+}
+
+td[class$="2"]::before{
+    content:"2-  ";
+}
+
+td[class$="3"]::before{
+    content:"3-  ";
+}
+
+/********************
+* liste qualifiés
+*********************/
+
+
+div#qualifies{
+    visibility: hidden;
+    position : relative;
+    bottom: 50px;
+    width:40%;
+    margin-left:60%;
+    height:80px;
+}
+
+/********************
+* stades
+*********************/
+
+section#stades {
+    width : 33%;
+    margin-top:20px;
+    position: relative;
+    top : 50px;
+    margin-left:25%;
+    border : 1px solid black;
+    height: 180px;
+    padding: 10px;
+    background-color: #ad956b;
+}
+
+section#stades img {
+    margin-right : 10px;
+    height:100%;
+    max-width:220px;
+    float : left;
+}
+
+/********************
+* footer
+*********************/
+footer{
+    font-style: italic;
+}

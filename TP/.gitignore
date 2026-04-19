@@ -1,0 +1,7 @@
+**/classes/
+**/class/
+**/docs/
+**/.vscode/
+*.class
+*.jar
+*.log

@@ -1,0 +1,46 @@
+CREATE DATABASE IF NOT EXISTS easyshop CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE easyshop;
+
+CREATE TABLE IF NOT EXISTS clients (
+  id_client INT AUTO_INCREMENT PRIMARY KEY,
+  prenom VARCHAR(120) NOT NULL,
+  nom VARCHAR(120) NOT NULL,
+  naissance DATE NULL,
+  email VARCHAR(190) NOT NULL UNIQUE,
+  mdp VARCHAR(255) NOT NULL,
+  telephone VARCHAR(40) NULL,
+  adresse VARCHAR(255) NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS commercants (
+  id_commercant INT AUTO_INCREMENT PRIMARY KEY,
+  nom_ent VARCHAR(160) NOT NULL,
+  adresse_ent VARCHAR(255) NULL,
+  email_ent VARCHAR(190) NOT NULL UNIQUE,
+  mdp VARCHAR(255) NOT NULL,
+  numero_ent VARCHAR(60) NULL,
+  date_ent DATE NULL,
+  type VARCHAR(120) NULL,
+  nom_proprio VARCHAR(160) NULL,
+  naissance DATE NULL,
+  adresse_proprio VARCHAR(255) NULL,
+  lieu VARCHAR(160) NULL,
+  description TEXT NULL,
+  ninea VARCHAR(80) NULL,
+  image VARCHAR(255) NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS livreur (
+  id_livreur INT AUTO_INCREMENT PRIMARY KEY,
+  nom_complet VARCHAR(160) NOT NULL,
+  naissance DATE NULL,
+  lieu VARCHAR(160) NULL,
+  Adress VARCHAR(255) NULL,
+  numero VARCHAR(60) NOT NULL UNIQUE,
+  mdp VARCHAR(255) NOT NULL,
+  type VARCHAR(80) NULL,
+  permis VARCHAR(80) NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

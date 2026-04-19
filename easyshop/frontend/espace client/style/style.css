@@ -1,0 +1,254 @@
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Couleur de fond */
+    color: #333; /* Couleur du texte principal */
+}
+
+/* Styles pour l'en-tête */
+header {
+    background-color: #f2f2f2; /* Fond blanc pour l'en-tête */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; /* Couleur du texte de l'en-tête */
+}
+
+header p {
+    font-size: 16px;
+    color: #666; /* Couleur du texte de description */
+}
+
+/* Styles pour la navigation */
+nav {
+    background-color: #333; /* Fond noir pour la barre de navigation */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff; /* Couleur du texte de la barre de navigation */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Styles pour le contenu principal */
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.content {
+    flex: 1;
+    background-color: #fff; /* Fond blanc pour le contenu principal */
+    padding: 20px;
+}
+
+/* Styles pour le pied de page */
+footer {
+    background-color: #333; /* Fond noir pour le pied de page */
+    color: #fff; /* Couleur du texte du pied de page */
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container .description,
+.footer-container .contact-info,
+.footer-container .social-links {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-container h4 {
+    margin-bottom: 10px;
+}
+
+.footer-container p {
+    margin-bottom: 5px;
+}
+
+.footer-container .social-links ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.footer-container .social-links ul li {
+    margin-right: 10px;
+}
+
+.footer-container .social-links ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-container .social-links ul li img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.search-bar {
+    margin: 20px;
+    text-align: center;
+}
+
+#search-input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #555;
+}
+.map-container {
+    height: 400px; /* Hauteur fixe de la carte */
+    position: relative; /* Position relative pour permettre un positionnement absolu des enfants */
+}
+
+.image-container {
+    float: left; /* Pour placer l'image à droite */
+    margin-left: 20px; /* Ajoute un peu d'espace entre le texte et l'image */
+    border-radius: 10px; /* Arrondit les coins de l'image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+}
+
+.image-container img {
+    width: 100px; /* Ajuste la largeur de l'image selon vos besoins */
+    height: auto; /* Permet à la hauteur de s'ajuster automatiquement en fonction de la largeur */
+}
+/* Styles pour le tableau d'informations client */
+#client-info {
+  display: none; /* Masquer par défaut */
+}
+
+/* Styles pour le tableau des commandes */
+#orders-info {
+  display: none; /* Masquer par défaut */
+}
+
+/* Styles pour les boutons */
+button {
+  background-color: #007bff; /* Bleu primaire */
+  color: white; /* Couleur du texte */
+  padding: 10px 20px; /* Espacement interne */
+  border: none; /* Pas de bordure */
+  cursor: pointer; /* Curseur de la souris */
+  border-radius: 5px; /* Coins arrondis */
+  margin-right: 10px; /* Marge à droite */
+  font-size: 16px; /* Taille de police */
+  font-weight: bold; /* Gras */
+}
+
+button:hover {
+  background-color: #0056b3; /* Bleu foncé au survol */
+}
+
+/* Styles pour le bouton PDF */
+.pdf-button {
+  background-color: #0056b3; /* Bleu foncé */
+}
+
+.pdf-button:hover {
+  background-color: #003580; /* Bleu plus foncé au survol */
+}
+
+/* Styles pour le texte */
+/* Styles pour le texte */
+th {
+    color: #007bff; /* Bleu primaire pour les titres */
+    font-size: 18px; /* Taille de police plus grande */
+    font-weight: bold; /* Gras */
+    border: 1px solid #ddd; /* Ajoute une bordure de 1px solide */
+    padding: 10px; /* Ajoute un espacement interne */
+    border-collapse: collapse; /* Fusionne les bordures pour un aspect plus lisse */
+}
+
+td {
+    color: #333; /* Couleur de texte plus foncée pour le contenu */
+    font-size: 16px; /* Taille de police */
+    border: 1px solid #ddd; /* Ajoute une bordure de 1px solide */
+    padding: 10px; /* Ajoute un espacement interne */
+    border-collapse: collapse; /* Fusionne les bordures pour un aspect plus lisse */
+}
+
+strong {
+  font-weight: bold; /* Gras pour le texte fort */
+}
+/* Centrer le contenu des tables */
+/* Ajuster la largeur des tables automatiquement */
+table {
+  width: auto;
+  margin: 0 auto; /* Centre la table horizontalement */
+}
+
+/* Ajuster la largeur des boutons automatiquement */
+button {
+  width: auto;
+  display: block; /* Convertir en élément de bloc */
+  margin: 0 auto; /* Centre le bouton horizontalement */
+}
+
+/* Style pour la liste des boutiques */
+#boutiques-list {
+    margin-top: 20px; /* Marge en haut de la liste des boutiques */
+}
+
+#boutiques-list ul {
+    list-style-type: none; /* Supprime les puces de la liste */
+}
+
+#boutiques-list li {
+    border: 1px solid #ccc; /* Bordure autour de chaque élément de la liste */
+    padding: 10px; /* Espacement intérieur */
+    margin-bottom: 10px; /* Marge en bas entre chaque élément de la liste */
+}
+
+#boutiques-list li strong {
+    font-weight: bold; /* Texte en gras pour le nom de la boutique */
+    color: #333; /* Couleur du texte */
+}
+
+#boutiques-list li span {
+    color: #666; /* Couleur du texte pour l'adresse */
+}
+
+#boutiques-list li p {
+    margin-top: 5px; /* Marge en haut du paragraphe de description */
+    color: #888; /* Couleur du texte pour la description */
+}
+

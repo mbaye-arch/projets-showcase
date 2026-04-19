@@ -1,0 +1,41 @@
+Abdoulaye MBAYE
+Groupe 1.
+
+Exercice 1.
+Q1. class LightBulb
+Q1.1 les signatures de methodes de la classe LightBulb
+    getWatt() sapplique sur un objet de type LightBulb type de retour int
+    getLumen() sapplique sur un objet de type LightBulb type de retour int
+    getColor sapplique sur un objet de type LightBulb type de retour String
+    turnOn sapplique sur un objet de type LightBulb ne retourne rien mais cets un procedure
+    turnOff sapplique sur un objet de type LightBulb ne retourne rien mais cets un procedure
+    toString sapplique sur un objet de type LightBulb type de retour String
+
+Q1.2. les attributs necessaire sont 
+    puissance type int 
+    lumens type int 
+    color type String 
+    isOn type boolean 
+    le type de lattrinbut le plus pertinent representant letat de la lampe est un boolean
+Q1.3. le constructeur prend en parametre 
+    la puissance , le lumens et la couleur 
+    LightBulb(puissance, lumens , color)
+Q2.fait
+Q3.fait 
+Q4.fait
+Q5.fait
+Q6.fait
+Q7.fait
+
+Exercice 2.
+Q1.fait
+Q2.fait
+Q3.fait
+
+Exercice 3.
+Q1.fait
+Q2.fait
+Q3.fait
+
+rmque toutes les exercices ont ete cd fait et les reponses fait sont justififie dans le code 
+

@@ -1,0 +1,149 @@
+/* Reset CSS pour réinitialiser les styles par défaut */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+h2{
+  text-align :center;
+}
+
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+/* Style pour le formulaire de connexion */
+.login-container form,
+.register-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px; /* Ajustez la largeur selon vos besoins */
+    margin: 0 auto; /* Pour centrer le formulaire horizontalement */
+}
+
+.login-container label,
+.register-container label {
+    margin-bottom: 10px;
+}
+
+.login-container select,
+.register-container select,
+.login-container input,
+.register-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-container button,
+.register-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-container button:hover,
+.register-container button:hover {
+    background-color: #0056b3;
+}
+.image-container {
+    float: left; /* Pour placer l'image à droite */
+    margin-left: 20px; /* Ajoute un peu d'espace entre le texte et l'image */
+    border-radius: 10px; /* Arrondit les coins de l'image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+}
+
+.image-container img {
+    width: 100px; /* Ajuste la largeur de l'image selon vos besoins */
+    height: auto; /* Permet à la hauteur de s'ajuster automatiquement en fonction de la largeur */
+}
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.description,
+.contact-info,
+.social-links {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.social-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links ul li {
+    margin-bottom: 5px;
+}
+
+.social-links ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.social-links ul li a:hover {
+    color: #666;
+}
+li img{
+  width : 20px;
+  }
+.con{
+    margin-left: 20px; /* Ajoute un peu d'espace entre le lien de connexion et les autres éléments de navigation */
+    background-color: #007bff; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    padding: 10px 15px; /* Ajoute du rembourrage */
+    border-radius: 5px; /* Coins arrondis */
+    text-decoration: none; /* Supprime le soulignement du lien */
+    position : absolute;
+    left:85%;
+}
+/* Style pour le lien "Mot de passe oublié ?" */
+#forgot-password-link {
+    display: block; /* Afficher comme un bloc pour occuper toute la largeur */
+    margin-top: 10px; /* Marge supérieure pour l'éloigner du bouton de connexion */
+    text-align: right; /* Aligner le texte à droite */
+    font-size: 14px; /* Taille de la police */
+    color: #666; /* Couleur du texte */
+    text-decoration: none; /* Supprimer le soulignement par défaut */
+}
+
+#forgot-password-link:hover {
+    color: #333; /* Couleur du texte au survol */
+}
+

@@ -1,0 +1,36 @@
+header{
+    background-image: url("../images/FOOTBALL_Mascotte_OLY_2D_RVB.webp")
+}
+header img:first-of-type{
+    position: relative;
+    left: 94%;
+    bottom: 40%;
+    width: 5%;
+}
+header button{
+    position: relative;
+    left: 50%;
+    right: 50%;
+}
+button:nth-of-type(1){
+    border-color: rgb(0, 129, 200);
+}
+button:nth-of-type(2){
+    border-color: rgb(252, 177, 49);
+}
+button:nth-of-type(3){
+    border-color: rgb(0,0,0);
+}
+button:nth-of-type(4){
+    border-color: rgb(0, 166, 81);
+    position: absolute;
+    left: 52%;
+    bottom: 12px;
+}
+button:nth-of-type(5){
+    border-color: rgb(238, 51, 78);
+    position: absolute;
+    left: 55%;
+    bottom: 12px;
+}
+

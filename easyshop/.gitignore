@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+
+.idea/
+.vscode/
+frontend/inscription/uploads/*
+!frontend/inscription/uploads/.gitkeep
+
+*.log
+*.tmp

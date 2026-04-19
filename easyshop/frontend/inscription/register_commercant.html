@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyShop - Inscription Commercant</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="../index.html">
+            <div class="image-container">
+                <img src="../image/logo.webp" alt="logo" width=10% height=10%>
+            </div>
+        </a>
+        <h1>EasyShop - Inscription Commerçant</h1>
+        <p>Votre destination privilégiée pour des achats simplifiés et un service clientèle exceptionnel.</p>
+    </header>
+    <main>
+        <div class="register-container">
+            <h2><br>Inscription Commerçant</h2>
+            <form id="registration-form-commercant" action="inscription_commercant.php" method="POST" enctype="multipart/form-data">
+                <label for="company-name"><br>Nom de l'Entreprise :</label>
+                <input type="text" id="company-name" name="company-name" required>
+                <label for="company-address">Adresse de l'Entreprise :</label>
+                <input type="text" id="company-address" name="company-address" required>
+                <label for="company-email">Adresse Email de l'Entreprise :</label>
+                <input type="email" id="company-email" name="company-email" required>
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" required>
+                <label for="company-number">Numéro de l'Entreprise :</label>
+                <input type="text" id="company-number" name="company-number" required>
+                <label for="creation-date">Date de Création :</label>
+                <input type="date" id="creation-date" name="creation-date" required>
+                <label for="business-type">Type d'entreprise :</label>
+                <select id="business-type" name="business-type" required>
+                  <option value="" disabled selected>Choisissez le domaine d'activité</option>
+                  <option value="Administration">Administration</option>
+                  <option value="Agriculture">Agriculture</option>
+                  <option value="Artisanat">Artisanat</option>
+                  <option value="Assurance">Assurance</option>
+                  <option value="Beauté">Beauté</option>
+                  <option value="Communication">Communication</option>
+                  <option value="Consulting">Consulting</option>
+                  <option value="Crèche">Crèche</option>
+                  <option value="Design">Design</option>
+                  <option value="Éducation">Éducation</option>
+                  <option value="Environnement">Environnement</option>
+                  <option value="Entretien">Entretien</option>
+                  <option value="Événementiel">Événementiel</option>
+                  <option value="Finance">Finance</option>
+                  <option value="Fitness">Fitness</option>
+                  <option value="Habillement">Habillement</option>
+                  <option value="Immobilier">Immobilier</option>
+                  <option value="Informatique">Informatique</option>
+                  <option value="Juridique">Juridique</option>
+                  <option value="Livraison">Livraison</option>
+                  <option value="Marketing">Marketing</option>
+                  <option value="Médical">Médical</option>
+                  <option value="Restauration">Restauration</option>
+                  <option value="Réparation">Réparation</option>
+                  <option value="Santé">Santé</option>
+                  <option value="Services a la personne">Services à la personne</option>
+                  <option value="Services a l'enfance">Services à l</option>
+                  <option value="Technologie">Technologie</option>
+                  <option value="Tourisme">Tourisme</option>
+                  <option value="Transport">Transport</option>
+                  <option value="Voyage">Voyage</option>
+                  <option value="Voiture">Voiture</option>
+                  <option value="Autres">Autres</option>
+                </select>
+                <label for="owner-fullname">Nom Complet du Propriétaire :</label>
+                <input type="text" id="owner-fullname" name="owner-fullname" required>
+                <label for="owner-birthdate">Date de Naissance du Propriétaire :</label>
+                <input type="date" id="owner-birthdate" name="owner-birthdate" required>
+                <label for="owner-address">Adresse du Propriétaire :</label>
+                <input type="text" id="owner-address" name="owner-address" required>
+                <label for="owner-birthplace">Lieu de Naissance du Propriétaire :</label>
+                <input type="text" id="owner-birthplace" name="owner-birthplace" required>
+                <label for="company-description">Description de l'entreprise :</label>
+                <input type="text" id="description-entreprise" name="description-entreprise" required>
+                <label for="commerce-number">Numéro de Commerce :</label>
+                <input type="text" id="commerce-number" name="commerce-number">
+                <label for="company-image">Image de l'Entreprise :</label>
+                <input type="file" id="company-image" name="company-image" accept="image/*" required>
+                <button type="submit">Inscription</button>
+            </form>
+        </div>
+    </main>
+
+   <footer>
+    <div class="footer-container">
+        <div class="description">
+            <h4>Description du site</h4>
+            <p>Easy Shop connecte les commerçants locaux à leur clientèle proche, simplifiant ainsi l'achat de produits et services locaux grâce à une livraison efficace, tout en favorisant l'économie locale.</p>
+        </div>
+        <div class="contact-info">
+            <h4>Contact</h4>
+            <p>Adresse : 123 Rue du Commerce, Ville</p>
+            <p>Téléphone : +1234567890</p>
+            <p>Email : contact@example.com</p>
+        </div>
+        <div class="social-links">
+            <h4>Suivez-nous</h4>
+            <ul>
+                <li><a href="#"><img src="../image/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="../image/insta.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="../image/whatsapp.png" alt="WhatsApp"></a></li>
+            </ul>
+        </div>
+    </div>
+    <p>&copy; 2024 Easy Shop. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
+

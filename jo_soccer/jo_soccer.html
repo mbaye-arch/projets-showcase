@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head>
+	<title>PROJET 2024 TW1</title>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Patrice THIBAUD"/>
+	<link href="./styles/soccer.css" type="text/css" rel="stylesheet"/>
+	<link href="./styles/style_ajouts.css" type="text/css" rel="stylesheet"/>
+	<script src="scripts/data/equipes.js" defer></script>
+	<script src="scripts/data/stades.js" defer></script>
+	<script src="scripts/jo.js" defer></script>
+</head>
+<body>
+	<header>
+		<span> Première étape : Constitution des poules</span>
+		<div id="illustration"></div>
+		<button class="phases" title="chargement des groupes">1</button>
+		<button class="phases" title="affichage des stades">2</button>
+		<button class="phases" title="prévision des deux premiers">3</button>
+		<br>
+		<button class="phases" title="prévision des 3emes">4</button>
+		<button class="phases" title="liste des qualifiés">5</button>
+		<img src="./images/logo_jo.png"/>
+	</header>
+	<div id="infoPays"></div>
+	<div id="poules">
+		<div id="groupes">
+			<table id ="A">
+				<thead>
+					<tr><th>Groupe A</th></tr>
+				</thead>
+				<tbody>
+					<tr><td>-</td></tr>
+					<tr><td>-</td></tr>
+					<tr><td>-</td></tr>
+					<tr><td>-</td></tr>
+				</tbody>
+			</table>
+			<table id ="B">
+				<thead>
+					<tr><th>Groupe B</th></tr>
+				</thead>
+				<tbody>
+					<tr><td>-</td></tr>
+					<tr><td>-</td></tr>
+					<tr><td>-</td></tr>
+					<tr><td>-</td></tr>
+				</tbody>
+			</table>
+			<table id ="C">
+				<thead>
+					<tr><th>Groupe C</th></tr>
+				</thead>
+				<tbody>
+					<tr><td>-</td></tr>
+					<tr><td>-</td></tr>
+					<tr><td>-</td></tr>
+					<tr><td>-</td></tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div id="notes">
+		🔍<br/>
+		A l'heure où est écrit ce programme seules 10 sélections sont officielement qualifiées.<br/>
+		Les deux places pour les pays de la CAF seront attribuées à l'issue du tournoi de qualification
+		olympique ayant lieu du 1er au 9 avril 2024.<br/>
+		Les pays participant sont le Cameroun, le Ghana, le Maroc, le Nigeria, l'Afrique du Sud, la Tanzanie, la Tunisie et la Zambie.
+		<br/>
+		Pour plus de simplicité deux pays ont été choisis arbitrairement ceux qui s'étaient 
+		qualifiés aux derniers JO de 2020 : la Zambie et le Cameroun.<br/>
+		De la même manière, les groupes ont été constitués avant le tirage au sort officiel.
+	</div>
+
+	<section id="stades">
+		<img id="diapo" src= "./images/stades/Parc_des_Princes_-_Tribune_Borelli.jpg">
+		<br/>
+		<p><strong>stade : </strong><span>Parc des Princes</span></p>
+		<p><strong>ville : </strong><span>Paris</span></p>
+		<p><strong>capacité : </strong><span>47929</span></p>
+	</section>
+	<div id="qualifies">
+		Après consultation de nos plus grands experts les équipes qualifiées 
+		<br/> à l'issue de la phase de poule seront : <br/><br/>
+	</div>
+	<footer>
+		<a href="https://www.fifa.com/fifaplus/fr/articles/tournoi-olympique-football-feminin-paris-2024-dates-stades-villes-qualifications-format-palmares" target="_blank">
+			Tournoi Olympique de football féminin 2024</a>
+	</footer>
+	
+				
+</body>
+
+</html>
