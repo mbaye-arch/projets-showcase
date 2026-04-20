@@ -2,6 +2,8 @@
 
 Collection de projets publics préparés pour un portfolio d'alternance en cycle ingénieur. Tous les projets utilisent des données fictives, des captures dédiées et une documentation orientée recruteur.
 
+Dépôt GitHub public : [mbaye-arch/projets-showcase](https://github.com/mbaye-arch/projets-showcase)
+
 ## Projets full-stack et métier
 
 | Projet | Stack | Objectif |
