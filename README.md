@@ -47,11 +47,3 @@ Dépôt GitHub public : [mbaye-arch/projets-showcase](https://github.com/mbaye-a
 | [JO Soccer](jo_soccer/) | HTML, CSS, JavaScript | Page interactive autour du tournoi olympique de football féminin |
 | [EasyShop](easyshop/) | PHP, MySQL, HTML, CSS, JS | Prototype académique multi-profils client, commerçant et livreur |
 
-## Qualité publication
-
-- Données fictives uniquement.
-- Captures intégrées dans chaque README.
-- Fichiers `.env`, dépendances installées, builds et caches exclus via `.gitignore`.
-- Secrets, emails personnels, numéros et credentials remplacés par des placeholders quand nécessaire.
-- Les projets privés ou sensibles ne sont pas inclus.
-- Les projets académiques gardent uniquement les sources, tests, assets et consignes utiles.
